@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
-import myPhoto from '../assets/my-photo.jpg';
+import myPhoto from '../assets/my-photo.webp';
 
 function AboutMe() {
   return (

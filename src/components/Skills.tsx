@@ -15,6 +15,16 @@ import {
   FaDatabase,
   FaMobile,
   FaRoute,
+  FaRobot,
+  FaPalette,
+  FaEye,
+  FaImage,
+  FaDribbble,
+  FaBehance,
+  FaFileVideo,
+  FaEraser,
+  FaCloud,
+  FaExchangeAlt,
 } from 'react-icons/fa';
 import {
   SiC,
@@ -27,6 +37,15 @@ import {
   SiCanva,
   SiOdoo,
   SiMysql,
+  SiOpenai,
+  SiVercel,
+  SiNetlify,
+  SiJira,
+  SiConfluence,
+  SiSlack,
+  SiTrello,
+  SiClickup,
+  SiPostman,
 } from 'react-icons/si';
 
 function Skills() {
@@ -72,10 +91,44 @@ function Skills() {
       { name: 'Figma', icon: <SiFigma size={60} color="#F24E1E" />, description: 'Advanced' },
       { name: 'Canva', icon: <SiCanva size={60} color="#00C4CC" />, description: 'Expert' },
     ],
-    "Development Tools & Others": [
+    "Others": [
       { name: 'Git', icon: <FaGitAlt size={60} color="#F05032" />, description: 'Advanced' },
       { name: 'WordPress', icon: <FaWordpress size={60} color="#21759B" />, description: 'Intermediate' },
       { name: 'Odoo ERP', icon: <SiOdoo size={60} color="#68C0B4" />, description: 'Novice' },
+    ],
+  };
+
+  // Extras categories with different design (no proficiency levels)
+  const extrasCategories = {
+    "AI Models & Tools": [
+      { name: 'Gemini 2.5 Pro', icon: <FaRobot size={40} color="#4285F4" />, description: 'Specific/Hard Tasks' },
+      { name: 'Claude Sonnet 4', icon: <FaRobot size={40} color="#FF6B35" />, description: 'Large Refactors' },
+      { name: 'ChatGPT Free', icon: <SiOpenai size={40} color="#10A37F" />, description: 'Developer Questions' },
+      { name: 'Qwen 3', icon: <FaRobot size={40} color="#FF6B6B" />, description: 'Daily Go-to AI' },
+      { name: 'Cursor', icon: <FaRobot size={40} color="#00D4AA" />, description: 'AI-Powered IDE' },
+    ],
+    "Helpful Tools": [
+      { name: 'Readdy AI', icon: <FaPalette size={40} color="#FF6B6B" />, description: 'AI Design Tool' },
+      { name: 'Google Lens', icon: <FaEye size={40} color="#4285F4" />, description: 'Visual Search' },
+      { name: 'Image Color Picker', icon: <FaImage size={40} color="#FF6B35" />, description: 'Color Extraction' },
+      { name: 'Dribbble', icon: <FaDribbble size={40} color="#EA4C89" />, description: 'Design Inspiration' },
+      { name: 'Behance', icon: <FaBehance size={40} color="#1769FF" />, description: 'Design Inspiration' },
+      { name: 'LottieFiles', icon: <FaFileVideo size={40} color="#00D4AA" />, description: 'Animation Library' },
+      { name: 'Postman', icon: <SiPostman size={40} color="#FF6C37" />, description: 'API Testing' },
+      { name: 'Remove.bg', icon: <FaEraser size={40} color="#FF6B6B" />, description: 'Background Removal' },
+      { name: 'CloudConvert', icon: <FaExchangeAlt size={40} color="#FF6B35" />, description: 'File Conversion' },
+    ],
+    "Corporate Tools": [
+      { name: 'Jira', icon: <SiJira size={40} color="#0052CC" />, description: 'Project Management' },
+      { name: 'Confluence', icon: <SiConfluence size={40} color="#172B4D" />, description: 'Documentation' },
+      { name: 'Slack', icon: <SiSlack size={40} color="#4A154B" />, description: 'Team Communication' },
+      { name: 'Trello', icon: <SiTrello size={40} color="#0079BF" />, description: 'Task Management' },
+      { name: 'ClickUp', icon: <SiClickup size={40} color="#7B68EE" />, description: 'Productivity Platform' },
+    ],
+    "Deployment Platforms": [
+      { name: 'Vercel', icon: <SiVercel size={40} color="#000000" />, description: 'Frontend Deployment' },
+      { name: 'Firebase Hosting', icon: <FaCloud size={40} color="#FFCA28" />, description: 'Google Cloud' },
+      { name: 'Netlify', icon: <SiNetlify size={40} color="#00AD9F" />, description: 'Static Site Hosting' },
     ],
   };
 
@@ -132,6 +185,42 @@ function Skills() {
             </div>
           </div>
         ))}
+
+        {/* Extras Section with Different Design */}
+        <div className="mt-16">
+          <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-teal to-blue-400 bg-clip-text text-transparent mb-12">
+            Extras & Tools
+          </h3>
+          {Object.entries(extrasCategories).map(([categoryName, tools]) => (
+            <div key={categoryName} className="space-y-6 mb-12">
+              <h4 className="text-xl font-bold text-center text-teal mb-6">
+                {categoryName}
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {tools.map((tool, index) => (
+                  <div 
+                    key={`${categoryName}-${index}`} 
+                    className="group relative bg-dark-gray rounded-lg p-4 shadow-lg border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                  >
+                    <div className="flex flex-col items-center space-y-3">
+                      <div className="group-hover:scale-110 transition-transform duration-300" aria-label={tool.name}>
+                        {tool.icon}
+                      </div>
+                      <div className="text-center">
+                        <h5 className="text-sm font-semibold text-off-white font-poppins leading-tight">
+                          {tool.name}
+                        </h5>
+                        <p className="text-xs text-gray-400 mt-1 font-poppins">
+                          {tool.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
