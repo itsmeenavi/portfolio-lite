@@ -36,20 +36,22 @@ const projectList: Project[] = [
     isExternal: true,
   },
   {
-    name: 'Basic Photography Gallery',
-    description: 'A website made for a project in Basic Photography',
-    image: basicImage,
-    link: 'https://basic-photo-finals.vercel.app/photography',
-    technologies: ['ReactJS', 'Tailwind'],
-    isExternal: true,
-  },
-  {
     name: 'Siklisto',
     description: 'A Mobile Based Electric Bike Charging Station Locator',
     image: siklistoImage,
     link: '/siklisto',
     technologies: ['Flutter', 'Dart', 'Firebase'],
   },
+  {
+    name: 'Lyceum of Alabang Performance Evaluation System',
+    description: 'Faculty Evaluation System with Sentiment Analysis',
+    image: loaImage,
+    link: 'https://github.com/LOA-Capstone/eval-system-capstone',
+    technologies: ['Html', 'Javascript', 'CSS', 'PHP', 'Python', 'Mysql'],
+    isExternal: true,
+  },
+ 
+
   {
     name: 'Random Bible Verse',
     description: 'Generates random bible verses to display',
@@ -67,11 +69,11 @@ const projectList: Project[] = [
     isExternal: true,
   },
   {
-    name: 'Lyceum of Alabang Performance Evaluation System',
-    description: 'Faculty Evaluation System with Sentiment Analysis',
-    image: loaImage,
-    link: 'https://github.com/LOA-Capstone/eval-system-capstone',
-    technologies: ['Html', 'Javascript', 'CSS', 'PHP', 'Python', 'Mysql'],
+    name: 'Basic Photography Gallery',
+    description: 'A website made for a project in Basic Photography',
+    image: basicImage,
+    link: 'https://basic-photo-finals.vercel.app/photography',
+    technologies: ['ReactJS', 'Tailwind'],
     isExternal: true,
   },
   {
