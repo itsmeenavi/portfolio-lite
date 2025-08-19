@@ -67,10 +67,11 @@ function Skills() {
       { name: 'Tanstack Query', icon: <FaDatabase size={60} color="#FF4154" />, description: 'Novice' },
       { name: 'Tanstack Router', icon: <FaRoute size={60} color="#FF4154" />, description: 'Novice' },
     ],
-    "Backend Technologies": [
-      { name: 'Node.js', icon: <FaNodeJs size={60} color="#339933" />, description: 'Beginner' },
-      { name: 'PHP', icon: <FaPhp size={60} color="#777BB4" />, description: 'Novice' },
-    ],
+         "Backend Technologies": [
+       { name: 'Node.js', icon: <FaNodeJs size={60} color="#339933" />, description: 'Beginner' },
+       { name: 'Express.js', icon: <FaNodeJs size={60} color="#000000" />, description: 'Novice' },
+       { name: 'PHP', icon: <FaPhp size={60} color="#777BB4" />, description: 'Novice' },
+     ],
     "Mobile Development": [
       { name: 'Flutter', icon: <SiFlutter size={60} color="#02569B" />, description: 'Novice' },
       { name: 'Dart', icon: <SiDart size={60} color="#0175C2" />, description: 'Novice' },
@@ -221,6 +222,228 @@ function Skills() {
             </div>
           ))}
         </div>
+
+                 {/* Tech Stack Combinations Section */}
+         <div className="mt-16">
+           <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-teal to-blue-400 bg-clip-text text-transparent mb-12">
+             Tech Stack Combinations
+           </h3>
+           
+           {/* Frontend-Only Stacks */}
+           <div className="mb-12">
+             <h4 className="text-2xl font-bold text-center text-teal mb-8">Frontend-Only Stacks</h4>
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+               {/* React + Tailwind Stack */}
+               <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                 <div className="flex items-center justify-center space-x-4 mb-4">
+                   <FaReact size={50} color="#61DAFB" />
+                   <span className="text-2xl font-bold text-teal">+</span>
+                   <SiTailwindcss size={50} color="#38B2AC" />
+                 </div>
+                 <h4 className="text-xl font-bold text-center text-off-white mb-3">React + Tailwind CSS</h4>
+                 <p className="text-gray-300 text-center text-sm leading-relaxed">
+                   Modern UI development with utility-first CSS framework for responsive design
+                 </p>
+               </div>
+
+               {/* React + Shadcn Stack */}
+               <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                 <div className="flex items-center justify-center space-x-4 mb-4">
+                   <FaReact size={50} color="#61DAFB" />
+                   <span className="text-2xl font-bold text-teal">+</span>
+                   <FaReact size={50} color="#000000" />
+                 </div>
+                 <h4 className="text-xl font-bold text-center text-off-white mb-3">React + Shadcn</h4>
+                 <p className="text-gray-300 text-center text-sm leading-relaxed">
+                   Modern React development with Shadcn UI components for beautiful, accessible interfaces
+                 </p>
+               </div>
+
+               {/* React + Material UI Stack */}
+               <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                 <div className="flex items-center justify-center space-x-4 mb-4">
+                   <FaReact size={50} color="#61DAFB" />
+                   <span className="text-2xl font-bold text-teal">+</span>
+                   <FaReact size={50} color="#0081CB" />
+                 </div>
+                 <h4 className="text-xl font-bold text-center text-off-white mb-3">React + Material UI</h4>
+                 <p className="text-gray-300 text-center text-sm leading-relaxed">
+                   React applications with Material Design components for consistent, professional UI
+                 </p>
+               </div>
+
+               {/* NextJS + Material UI Stack */}
+               <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                 <div className="flex items-center justify-center space-x-4 mb-4">
+                   <FaJsSquare size={50} color="#000000" />
+                   <span className="text-2xl font-bold text-teal">+</span>
+                   <FaReact size={50} color="#0081CB" />
+                 </div>
+                 <h4 className="text-xl font-bold text-center text-off-white mb-3">NextJS + Material UI</h4>
+                 <p className="text-gray-300 text-center text-sm leading-relaxed">
+                   Full-stack NextJS applications with Material Design components and server-side rendering
+                 </p>
+               </div>
+             </div>
+           </div>
+
+           {/* Backend-Involved Stacks */}
+           <div>
+             <h4 className="text-2xl font-bold text-center text-teal mb-8">Backend-Involved Stacks</h4>
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                               {/* PHP + MySQL Stack */}
+                <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                  <div className="flex items-center justify-center space-x-4 mb-4">
+                    <FaPhp size={50} color="#777BB4" />
+                    <span className="text-2xl font-bold text-teal">+</span>
+                    <SiMysql size={50} color="#4479A1" />
+                  </div>
+                  <h4 className="text-xl font-bold text-center text-off-white mb-3">PHP + MySQL</h4>
+                  <p className="text-gray-300 text-center text-sm leading-relaxed">
+                    Full-stack web development with server-side scripting and relational database management
+                  </p>
+                </div>
+
+                {/* PHP + MySQL + Python Stack */}
+                <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                  <div className="flex items-center justify-center space-x-3 mb-4">
+                    <FaPhp size={45} color="#777BB4" />
+                    <span className="text-xl font-bold text-teal">+</span>
+                    <SiMysql size={45} color="#4479A1" />
+                    <span className="text-xl font-bold text-teal">+</span>
+                    <FaPython size={45} color="#3776AB" />
+                  </div>
+                  <h4 className="text-xl font-bold text-center text-off-white mb-3">PHP + MySQL + Python</h4>
+                  <p className="text-gray-300 text-center text-sm leading-relaxed">
+                    Full-stack development with PHP backend, MySQL database, and Python for sentiment analysis
+                  </p>
+                </div>
+
+               {/* WordPress + MySQL + JS Stack */}
+               <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                 <div className="flex items-center justify-center space-x-3 mb-4">
+                   <FaWordpress size={45} color="#21759B" />
+                   <span className="text-xl font-bold text-teal">+</span>
+                   <SiMysql size={45} color="#4479A1" />
+                   <span className="text-xl font-bold text-teal">+</span>
+                   <FaJsSquare size={45} color="#F7DF1E" />
+                 </div>
+                 <h4 className="text-xl font-bold text-center text-off-white mb-3">WordPress + MySQL + JS</h4>
+                 <p className="text-gray-300 text-center text-sm leading-relaxed">
+                   CMS development with MySQL database and custom JavaScript functionality
+                 </p>
+               </div>
+
+               {/* Flutter + Dart + Firebase Stack */}
+               <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                 <div className="flex items-center justify-center space-x-3 mb-4">
+                   <SiFlutter size={45} color="#02569B" />
+                   <span className="text-xl font-bold text-teal">+</span>
+                   <SiDart size={45} color="#0175C2" />
+                   <span className="text-xl font-bold text-teal">+</span>
+                   <SiFirebase size={45} color="#FFCA28" />
+                 </div>
+                 <h4 className="text-xl font-bold text-center text-off-white mb-3">Flutter + Dart + Firebase</h4>
+                 <p className="text-gray-300 text-center text-sm leading-relaxed">
+                   Cross-platform mobile development with cloud backend services and real-time database
+                 </p>
+               </div>
+
+               {/* React + External API Stack */}
+               <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                 <div className="relative mb-4">
+                   <div className="flex items-center justify-center space-x-4">
+                     <div className="relative">
+                       <FaReact size={50} color="#61DAFB" />
+                       <div className="absolute -top-2 -right-2 w-4 h-4 bg-teal rounded-full flex items-center justify-center">
+                         <span className="text-xs text-white font-bold">✓</span>
+                       </div>
+                     </div>
+                     <div className="flex items-center space-x-2">
+                       <span className="text-2xl font-bold text-teal">→</span>
+                       <span className="text-sm text-gray-400">External</span>
+                     </div>
+                     <div className="relative opacity-30">
+                       <FaDatabase size={40} color="#666666" />
+                       <div className="absolute inset-0 bg-gray-800 rounded opacity-50"></div>
+                     </div>
+                   </div>
+                 </div>
+                 <h4 className="text-xl font-bold text-center text-off-white mb-3">React + External APIs</h4>
+                 <p className="text-gray-300 text-center text-sm leading-relaxed">
+                   Frontend development consuming provided APIs and external data sources
+                 </p>
+               </div>
+
+                               {/* NextJS + External API Stack */}
+                <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                  <div className="relative mb-4">
+                    <div className="flex items-center justify-center space-x-4">
+                      <div className="relative">
+                        <FaJsSquare size={50} color="#000000" />
+                        <div className="absolute -top-2 -right-2 w-4 h-4 bg-teal rounded-full flex items-center justify-center">
+                          <span className="text-xs text-white font-bold">✓</span>
+                        </div>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <span className="text-2xl font-bold text-teal">→</span>
+                        <span className="text-sm text-gray-400">External</span>
+                      </div>
+                      <div className="relative opacity-30">
+                        <FaDatabase size={40} color="#666666" />
+                        <div className="absolute inset-0 bg-gray-800 rounded opacity-50"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 className="text-xl font-bold text-center text-off-white mb-3">NextJS + External APIs</h4>
+                  <p className="text-gray-300 text-center text-sm leading-relaxed">
+                    Full-stack React framework consuming provided APIs and external services
+                  </p>
+                </div>
+
+                                 {/* React Native Bare + External API Stack */}
+                 <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                   <div className="relative mb-4">
+                     <div className="flex items-center justify-center space-x-4">
+                       <div className="relative">
+                         <FaMobile size={50} color="#61DAFB" />
+                         <div className="absolute -top-2 -right-2 w-4 h-4 bg-teal rounded-full flex items-center justify-center">
+                           <span className="text-xs text-white font-bold">✓</span>
+                         </div>
+                       </div>
+                       <div className="flex items-center space-x-2">
+                         <span className="text-2xl font-bold text-teal">→</span>
+                         <span className="text-sm text-gray-400">External</span>
+                       </div>
+                       <div className="relative opacity-30">
+                         <FaDatabase size={40} color="#666666" />
+                         <div className="absolute inset-0 bg-gray-800 rounded opacity-50"></div>
+                       </div>
+                     </div>
+                   </div>
+                   <h4 className="text-xl font-bold text-center text-off-white mb-3">React Native Bare + External APIs</h4>
+                   <p className="text-gray-300 text-center text-sm leading-relaxed">
+                     Native mobile development with React Native consuming external APIs and services
+                   </p>
+                 </div>
+
+                 {/* React + Firebase + Express.js Stack */}
+                 <div className="group bg-gradient-to-br from-dark-gray to-charcoal-gray rounded-xl p-6 shadow-xl border border-gray-600 hover:border-teal transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                   <div className="flex items-center justify-center space-x-3 mb-4">
+                     <FaReact size={45} color="#61DAFB" />
+                     <span className="text-xl font-bold text-teal">+</span>
+                     <SiFirebase size={45} color="#FFCA28" />
+                     <span className="text-xl font-bold text-teal">+</span>
+                     <FaNodeJs size={45} color="#000000" />
+                   </div>
+                   <h4 className="text-xl font-bold text-center text-off-white mb-3">React + Firebase + Express.js</h4>
+                   <p className="text-gray-300 text-center text-sm leading-relaxed">
+                     Full-stack React development with Firebase backend and Express.js server for custom APIs
+                   </p>
+                 </div>
+             </div>
+           </div>
+         </div>
       </div>
     </section>
   );

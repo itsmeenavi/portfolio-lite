@@ -34,9 +34,16 @@ function WorkExperience() {
     {
       company: 'Fundamental IT Solutions',
       position: 'Junior Frontend Developer',
-      years: 'April 2025 - Current',
+      years: 'April 2025 - August 2025',
       description:
         'Contributing to frontend development projects using modern technologies and frameworks. Focusing on creating responsive and user-friendly interfaces while collaborating with cross-functional teams to deliver high-quality software solutions.',
+    },
+    {
+      company: 'Anehan IT Solutions (Start-Up)',
+      position: 'Web Developer (Freelance)',
+      years: 'March 2025 - Current',
+      description:
+        'Developing the company website and creating custom client projects including fitness websites, makeup product business websites, and other e-commerce solutions. Utilizing modern web technologies to build responsive, user-friendly interfaces that enhance client business presence and drive customer engagement.',
     },
   ];
 

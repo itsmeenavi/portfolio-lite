@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Custom colors for Tailwind CSS v4 */
 @theme {
@@ -9,9 +10,6 @@
   --color-teal: #00b4d8;
   --color-teal-dark: #0096c7;
 }
-
-/* Custom styles for your portfolio */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Custom animations */
 @keyframes fade-in-up {
