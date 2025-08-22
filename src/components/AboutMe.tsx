@@ -83,7 +83,7 @@ function AboutMe() {
           {/* Resume Button */}
           <div className="animate-fade-in-up delay-500">
             <a
-              href="/Ivhan Salazar Resume Final.pdf"
+              href="/Ivhan Salazar - Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-teal text-rich-black font-bold py-2 px-4 rounded hover:bg-teal-dark transition-colors transform hover:scale-105"
