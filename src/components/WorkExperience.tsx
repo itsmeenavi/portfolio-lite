@@ -32,18 +32,18 @@ function WorkExperience() {
         'Gained in-depth exposure to PSA\'s operations and the BRAMS/BRAP Project through multiple workshops and meetings. Strengthened JavaScript proficiency by completing a full course, which covered essential concepts such as HTTP vs. HTTPS, encryption, and hashing. Simultaneously, advanced skills in Golang by studying various courses and setting up local client-server connections. Contributed to UI/UX design discussions for the BRAP application and documented technical insights during project sessions. Expanded front-end capabilities by learning ReactJS (including API fetching) and explored modern web technologies such as Next.js and Supabase for streamlined development workflows. Enhanced mobile development expertise with Flutter while gaining hands-on experience initializing projects with PostgreSQL and npm-based toolchains.',
     },
     {
-      company: 'Fundamental IT Solutions',
-      position: 'Junior Frontend Developer',
-      years: 'April 2025 - August 2025',
-      description:
-        'Contributing to frontend development projects using modern technologies and frameworks. Focusing on creating responsive and user-friendly interfaces while collaborating with cross-functional teams to deliver high-quality software solutions.',
-    },
-    {
       company: 'Anehan IT Solutions (Start-Up)',
       position: 'Web Developer (Freelance)',
       years: 'March 2025 - Current',
       description:
         'Developing the company website and creating custom client projects including fitness websites, makeup product business websites, and other e-commerce solutions. Utilizing modern web technologies to build responsive, user-friendly interfaces that enhance client business presence and drive customer engagement.',
+    },
+    {
+      company: 'Fundamental IT Solutions',
+      position: 'Junior Frontend Developer',
+      years: 'April 2025 - August 2025',
+      description:
+        'Built and optimized responsive web applications using ReactJS with component libraries such as MUI, Ant Design, and ShadCN UI for scalable and consistent interfaces. Developed Next.js applications with MUI, focusing on performance, routing, and SEO optimization. Integrated REST APIs from backend services using Axios and Tanstack Query to deliver dynamic and real-time user experiences. Implemented form handling, data validation, and state management with Zustand, and custom hooks. Contributed to UI/UX design implementations, ensuring accessibility, responsiveness, and cross-browser compatibility. Deployed projects using Cloudflare Workers with Wrangler, Netlify, and GitHub Actions for automated CI/CD workflows. Utilized Jira for project management, sprint tracking, and collaborative task management. Improved developer workflows by following clean coding practices, reusable components, and version control (Git/GitHub).',
     },
   ];
 

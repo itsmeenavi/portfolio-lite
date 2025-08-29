@@ -8,7 +8,8 @@ import WorkExperience from './components/WorkExperience';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact'; 
-import Siklisto from './components/projects/Siklisto'; 
+import Siklisto from './components/projects/Siklisto';
+import NotFound from './components/NotFound'; 
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               }
             />
             <Route path="/siklisto" element={<Siklisto />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
