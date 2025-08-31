@@ -36,7 +36,7 @@ function WorkExperience() {
       position: 'Web Developer (Freelance)',
       years: 'March 2025 - Current',
       description:
-        'Developing the company website and creating custom client projects including fitness websites, makeup product business websites, and other e-commerce solutions. Utilizing modern web technologies to build responsive, user-friendly interfaces that enhance client business presence and drive customer engagement.',
+        'Built the client fitness app website using Next.js, MUI, and Tailwind CSS, with TanStack Query for Firebase data fetching. Developed the fitness app admin dashboard using React (Vite + Bun) with ShadCN UI, integrating Firebase Functions and Express.js for backend features. Created the main company website (Anehan AgriTech) using React (Vite) and Material UI. Developed the Anehan IT Solutions corporate website using React (Vite) with Tailwind CSS for client-facing services. Deployed applications using Firebase Hosting and Vercel. Used Jira for sprint planning, task tracking, and project collaboration.',
     },
     {
       company: 'Fundamental IT Solutions',
