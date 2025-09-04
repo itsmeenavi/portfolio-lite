@@ -32,9 +32,9 @@ function WorkExperience() {
         'Gained in-depth exposure to PSA\'s operations and the BRAMS/BRAP Project through multiple workshops and meetings. Strengthened JavaScript proficiency by completing a full course, which covered essential concepts such as HTTP vs. HTTPS, encryption, and hashing. Simultaneously, advanced skills in Golang by studying various courses and setting up local client-server connections. Contributed to UI/UX design discussions for the BRAP application and documented technical insights during project sessions. Expanded front-end capabilities by learning ReactJS (including API fetching) and explored modern web technologies such as Next.js and Supabase for streamlined development workflows. Enhanced mobile development expertise with Flutter while gaining hands-on experience initializing projects with PostgreSQL and npm-based toolchains.',
     },
     {
-      company: 'Anehan IT Solutions (Start-Up)',
+      company: 'Anehan IT Solutions',
       position: 'Web Developer (Freelance)',
-      years: 'March 2025 - Current',
+      years: 'March 2025 - August 2025',
       description:
         'Built the client fitness app website using Next.js, MUI, and Tailwind CSS, with TanStack Query for Firebase data fetching. Developed the fitness app admin dashboard using React (Vite + Bun) with ShadCN UI, integrating Firebase Functions and Express.js for backend features. Created the main company website (Anehan AgriTech) using React (Vite) and Material UI. Developed the Anehan IT Solutions corporate website using React (Vite) with Tailwind CSS for client-facing services. Deployed applications using Firebase Hosting and Vercel. Used Jira for sprint planning, task tracking, and project collaboration.',
     },
