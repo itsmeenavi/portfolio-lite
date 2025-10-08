@@ -8,6 +8,7 @@ import notepadAppImage from '../assets/notepad.png';
 import worldTimezoneImage from '../assets/worldtimezone.png';
 import anehantechImage from '../assets/anehanit.png';
 import anehansiteImage from '../assets/anehan.png';
+import lawschoolImage from '../assets/lawschool.png';
 
 interface Project {
   name: string;
@@ -19,6 +20,14 @@ interface Project {
 }
 
 const projectList: Project[] = [
+  {
+    name: 'Law School Fitness',
+    description: 'A comprehensive fitness platform and mobile app for fitness enthusiasts',
+    image: lawschoolImage,
+    link: 'https://lawschoolfitness.com',
+    technologies: ['Next.js', 'Material UI', 'Firebase', "Tailwind CSS"],
+    isExternal: true,
+  },
   {
     name: 'Anehan',
     description: 'A B2B mobile platform connecting palay farmers with rice millers and retailers in Central Luzon',
