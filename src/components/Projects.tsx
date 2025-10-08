@@ -50,8 +50,6 @@ const projectList: Project[] = [
     technologies: ['Html', 'Javascript', 'CSS', 'PHP', 'Python', 'Mysql'],
     isExternal: true,
   },
- 
-
   {
     name: 'Random Bible Verse',
     description: 'Generates random bible verses to display',

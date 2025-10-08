@@ -26,17 +26,16 @@ function AboutMe() {
           </h3>
 
           <p className="text-lg leading-relaxed mb-6 animate-fade-in-up delay-200">
-          I am a software developer with a keen focus on delivering top-tier quality in every application I test, consistently striving for perfection. I bring strong leadership abilities and a competitive drive to each project, always pushing myself to achieve the best possible outcomes. With excellent communication skills and a solid work ethic, I approach every task with meticulous attention to detail, dedicating myself to meeting the high standards and demands of each challenge.       
-
+            I am a Frontend Developer with 2+ years of experience building modern web applications. I specialize in React, Next.js, and TypeScript, with a strong focus on creating responsive, performant user interfaces. I'm passionate about clean code, user experience, and leveraging modern development tools to deliver exceptional results.
           </p>
 
           <div className="mb-6 animate-fade-in-up delay-300">
             <h4 className="text-teal font-semibold mb-2">Core Skills:</h4>
             <ul className="list-disc list-inside space-y-1 pl-4">
-              <li>React, Nextjs, WordPress, and Flutter</li>
+              <li>React, Next.js, TypeScript, and JavaScript</li>
               <li>UI/UX Design with Figma</li>
-              <li>Networking & Server Configuration</li>
-              <li>Leadership & Project Management</li>
+              <li>REST API Integration & State Management</li>
+              <li>Modern Development Tools & Version Control</li>
             </ul>
           </div>
 
