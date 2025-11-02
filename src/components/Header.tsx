@@ -46,34 +46,7 @@ function Header() {
               className="text-off-white hover:text-teal block py-2 px-5"
               onClick={() => handleNavigation('about-me')}
             >
-              About Me
-            </a>
-          </li>
-          <li className="md:ml-5">
-            <a
-              href="#education"
-              className="text-off-white hover:text-teal block py-2 px-5"
-              onClick={() => handleNavigation('education')}
-            >
-              Education
-            </a>
-          </li>
-          <li className="md:ml-5">
-            <a
-              href="#work-experience"
-              className="text-off-white hover:text-teal block py-2 px-5"
-              onClick={() => handleNavigation('work-experience')}
-            >
-              Work
-            </a>
-          </li>
-          <li className="md:ml-5">
-            <a
-              href="#skills"
-              className="text-off-white hover:text-teal block py-2 px-5"
-              onClick={() => handleNavigation('skills')}
-            >
-              Skills
+              About
             </a>
           </li>
           <li className="md:ml-5">
@@ -83,6 +56,24 @@ function Header() {
               onClick={() => handleNavigation('projects')}
             >
               Projects
+            </a>
+          </li>
+          <li className="md:ml-5">
+            <a
+              href="#work-experience"
+              className="text-off-white hover:text-teal block py-2 px-5"
+              onClick={() => handleNavigation('work-experience')}
+            >
+              Experience
+            </a>
+          </li>
+          <li className="md:ml-5">
+            <a
+              href="#skills"
+              className="text-off-white hover:text-teal block py-2 px-5"
+              onClick={() => handleNavigation('skills')}
+            >
+              Skills
             </a>
           </li>
         </ul>

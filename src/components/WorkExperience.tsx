@@ -4,46 +4,40 @@ import workImage from '../assets/work.png';
 function WorkExperience() {
   const workExperiences = [
     {
-      company: 'Connected Technology',
-      position: 'CSS NC2 OJT',
-      years: 'Nov 2022',
+      company: 'PHILIPPINE CENTRAL ENGAGEMENT SERVICES INC.',
+      position: 'Mobile Application Developer | Wordpress Developer | UI/UX Designer',
       description:
-        'Designed network layouts using Packet Tracer and set up peer-to-peer networking configurations. Additionally, I established server-to-user networks to ensure smooth data flow. Furthermore, I gained hands-on experience in computer assembling and disassembling, enhancing my hardware proficiency.',
+        'Led and managed the IT team, reporting directly to senior management to propose and implement new workflows that improved organizational efficiency. Led the company\'s new mobile app development, building and delivering the first version of the application. Designed and developed the company website from initial UI design to final code deployment and maintenance.',
     },
     {
-      company: 'Avasia Information Systems Inc.',
-      position: 'Web Developer Intern',
-      years: 'March 2023 - July 2023',
+      company: 'FUNDAMENTAL IT SOLUTIONS',
+      position: 'Frontend Developer',
       description:
-        'Developed User Authentication using Cordova to ensure secure access and authentication processes. Created a Company Job Application Form that incorporated MySQL, Mustache JS, jQuery, Slim PHP, and Ajax, optimizing data handling and enhancing user interaction. Additionally, crafted comprehensive documentation for a Transport Route Project, leveraging Google Maps API and routing functionalities to provide clear implementation guidelines.',
+        'Built and optimized responsive web apps for 10,000+ users by partnering with designers and backend developers. Collaborated with the backend team to integrate RESTful APIs, launching dynamic, data-driven features for users. Worked directly with the project manager to track tasks, manage sprints, and ensure all code met high-quality, clean-coding standards. Developed the Native Mobile Application of the website, integrating REST APIs for core functionality.',
     },
     {
-      company: 'P.C.E.S Inc.',
-      position: 'Mobile Application Developer',
-      years: 'Sept 2023 - Feb 2024',
+      company: 'ANEHAN IT SOLUTIONS',
+      position: 'Web Developer',
       description:
-        'Developed websites using PHP and JavaScript. Designed websites using WordPress CMS with the help of HTML and JavaScript. Created professional presentations for B2B and B2C clients. Designed the full UI/UX of a mobile app using Figma. Initiated development of a mobile application version of the main company product using Flutter Dart. Managed the IT team to be more organized and systematic.',
+        'Designed and developed a comprehensive fitness ecosystem, leading client consultations to translate their business vision into a multi-portal platform. Developed a unified platform for a client\'s business operations, featuring integrated E-Commerce, Trainer, Affiliate, and Admin dashboards.',
     },
     {
-      company: 'Philippine Statistics Authority',
+      company: 'PHILIPPINE STATISTICS AUTHORITY',
       position: 'Systems Developer Internship',
-      years: 'October 2024 - December 2024',
       description:
         'Gained in-depth exposure to PSA\'s operations and the BRAMS/BRAP Project through multiple workshops and meetings. Strengthened JavaScript proficiency by completing a full course, which covered essential concepts such as HTTP vs. HTTPS, encryption, and hashing. Simultaneously, advanced skills in Golang by studying various courses and setting up local client-server connections. Contributed to UI/UX design discussions for the BRAP application and documented technical insights during project sessions. Expanded front-end capabilities by learning ReactJS (including API fetching) and explored modern web technologies such as Next.js and Supabase for streamlined development workflows. Enhanced mobile development expertise with Flutter while gaining hands-on experience initializing projects with PostgreSQL and npm-based toolchains.',
     },
     {
-      company: 'Anehan IT Solutions',
-      position: 'Web Developer (Freelance)',
-      years: 'March 2025 - August 2025',
+      company: 'AVASIA INFORMATION SYSTEMS INC.',
+      position: 'Web Developer Intern',
       description:
-        'Built the client fitness app website using Next.js, MUI, and Tailwind CSS, with TanStack Query for Firebase data fetching. Developed the fitness app admin dashboard using React (Vite + Bun) with ShadCN UI, integrating Firebase Functions and Express.js for backend features. Created the main company website (Anehan AgriTech) using React (Vite) and Material UI. Developed the Anehan IT Solutions corporate website using React (Vite) with Tailwind CSS for client-facing services. Deployed applications using Firebase Hosting and Vercel. Used Jira for sprint planning, task tracking, and project collaboration.',
+        'Developed User Authentication using Cordova to ensure secure access and authentication processes. Created a Company Job Application Form that incorporated MySQL, Mustache JS, jQuery, Slim PHP, and Ajax, optimizing data handling and enhancing user interaction. Additionally, crafted comprehensive documentation for a Transport Route Project, leveraging Google Maps API and routing functionalities to provide clear implementation guidelines.',
     },
     {
-      company: 'Fundamental IT Solutions',
-      position: 'Junior Frontend Developer',
-      years: 'April 2025 - August 2025',
+      company: 'CONNECTED TECHNOLOGY',
+      position: 'CSS NC2 OJT',
       description:
-        'Built and optimized responsive web applications using ReactJS with component libraries such as MUI, Ant Design, and ShadCN UI for scalable and consistent interfaces. Developed Next.js applications with MUI, focusing on performance, routing, and SEO optimization. Integrated REST APIs from backend services using Axios and Tanstack Query to deliver dynamic and real-time user experiences. Implemented form handling, data validation, and state management with Zustand, and custom hooks. Contributed to UI/UX design implementations, ensuring accessibility, responsiveness, and cross-browser compatibility. Deployed projects using Cloudflare Workers with Wrangler, Netlify, and GitHub Actions for automated CI/CD workflows. Utilized Jira for project management, sprint tracking, and collaborative task management. Improved developer workflows by following clean coding practices, reusable components, and version control (Git/GitHub).',
+        'Designed network layouts using Packet Tracer and set up peer-to-peer networking configurations. Additionally, I established server-to-user networks to ensure smooth data flow. Furthermore, I gained hands-on experience in computer assembling and disassembling, enhancing my hardware proficiency.',
     },
   ];
 
@@ -97,13 +91,10 @@ function WorkExperience() {
                     <FaBriefcase className="text-teal w-6 h-6 mt-1 flex-shrink-0 relative z-10" />
 
                     <div className="flex-1">
-                      <span className="block text-teal font-semibold">
-                        {item.years}
-                      </span>
-                      <h3 className="text-xl font-semibold mt-1">
+                      <h3 className="text-xl font-semibold text-off-white">
                         {item.company}
                       </h3>
-                      <p className="text-teal/80 font-medium mb-2">{item.position}</p>
+                      <p className="text-teal font-medium mb-3">{item.position}</p>
                       {item.description && (
                         <p className="text-gray-300 text-sm leading-relaxed">
                           {item.description}
