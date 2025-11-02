@@ -1,11 +1,22 @@
 import { FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import siklistoImage from '../assets/siklisto.png';
+import loaImage from '../assets/loa.png';
+import adviceImage from '../assets/advice.png';
+import bibleImage from '../assets/bible.png';
+import basicImage from '../assets/basic.png';
+import notepadAppImage from '../assets/notepad.png';
+import worldTimezoneImage from '../assets/worldtimezone.png';
+import anehantechImage from '../assets/anehanit.png';
+import anehansiteImage from '../assets/anehan.png';
+import lawschoolImage from '../assets/lawschool.png';
 
 interface Project {
   name: string;
   description: string;
   link: string;
   technologies: string[];
+  image: string;
   isExternal?: boolean;
   subSystems?: {
     name: string;
@@ -19,6 +30,7 @@ const clientProjects: Project[] = [
     description: 'A comprehensive web platform built to manage all business operations for a fitness company, supporting a client-facing mobile app.',
     link: 'https://lawschoolfitness.com',
     technologies: ['Next.js', 'React.js', 'Material UI', 'Shadcn', 'Firebase', 'Tailwind CSS'],
+    image: lawschoolImage,
     isExternal: true,
     subSystems: [
       {
@@ -44,6 +56,7 @@ const clientProjects: Project[] = [
     description: 'A B2B mobile platform connecting palay farmers with rice millers and retailers in Central Luzon',
     link: 'https://anehan.vercel.app',
     technologies: ['ReactJS', 'Tailwind CSS', 'Material UI'],
+    image: anehansiteImage,
     isExternal: true,
   },
   {
@@ -51,6 +64,7 @@ const clientProjects: Project[] = [
     description: 'A software development team dedicated to building innovative solutions from concept to deployment',
     link: 'https://anehan-tech.vercel.app',
     technologies: ['ReactJS', 'Tailwind CSS', 'Material UI'],
+    image: anehantechImage,
     isExternal: true,
   },
 ];
@@ -61,12 +75,14 @@ const schoolProjects: Project[] = [
     description: 'A Mobile Based Electric Bike Charging Station Locator',
     link: '/siklisto',
     technologies: ['Flutter', 'Dart', 'Firebase'],
+    image: siklistoImage,
   },
   {
     name: 'Lyceum of Alabang Performance Evaluation System',
     description: 'Faculty Evaluation System with Sentiment Analysis',
     link: 'https://github.com/LOA-Capstone/eval-system-capstone',
     technologies: ['HTML', 'Javascript', 'CSS', 'PHP', 'Python', 'MySQL'],
+    image: loaImage,
     isExternal: true,
   },
   {
@@ -74,6 +90,7 @@ const schoolProjects: Project[] = [
     description: 'A website made for a project in Basic Photography',
     link: 'https://basic-photo-finals.vercel.app/photography',
     technologies: ['ReactJS', 'Tailwind CSS'],
+    image: basicImage,
     isExternal: true,
   },
 ];
@@ -84,6 +101,7 @@ const personalProjects: Project[] = [
     description: 'Generates random bible verses to display',
     link: 'https://random-bible-verse-flame.vercel.app',
     technologies: ['Next.js'],
+    image: bibleImage,
     isExternal: true,
   },
   {
@@ -91,6 +109,7 @@ const personalProjects: Project[] = [
     description: 'Generates random advice',
     link: 'https://random-advice-app-seven.vercel.app',
     technologies: ['Next.js'],
+    image: adviceImage,
     isExternal: true,
   },
   {
@@ -98,6 +117,7 @@ const personalProjects: Project[] = [
     description: 'Allows users to create temporary, shareable notes with an expiration time',
     link: 'https://notepad-app-eight.vercel.app',
     technologies: ['Next.js', 'Tailwind CSS', 'Upstash KV', 'Redis'],
+    image: notepadAppImage,
     isExternal: true,
   },
   {
@@ -105,6 +125,7 @@ const personalProjects: Project[] = [
     description: 'See different timezones around the world simultaneously',
     link: 'https://world-timezone-gamma.vercel.app',
     technologies: ['ReactJS', 'Tailwind CSS'],
+    image: worldTimezoneImage,
     isExternal: true,
   },
 ];
@@ -112,20 +133,34 @@ const personalProjects: Project[] = [
 const ProjectItem = ({ project }: { project: Project }) => {
   const content = (
     <div className="p-5 bg-charcoal-gray/50 border border-teal/20 rounded-lg hover:border-teal hover:bg-charcoal-gray transition-all duration-300 group">
-      <div className="flex items-start gap-4 mb-3">
-        <div className="flex-shrink-0 mt-1">
-          {project.isExternal ? (
-            <FaExternalLinkAlt className="text-teal w-4 h-4 group-hover:scale-110 transition-transform" />
-          ) : (
-            <FaArrowRight className="text-teal w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          )}
+      <div className="flex flex-col md:flex-row items-start gap-5 mb-3">
+        {/* Project Image */}
+        <div className="w-full md:w-64 flex-shrink-0">
+          <img
+            src={project.image}
+            alt={project.name}
+            className="w-full h-48 md:h-48 object-cover rounded-lg border border-teal/20 group-hover:border-teal transition-all"
+          />
         </div>
+
+        {/* Project Info */}
         <div className="flex-1">
-          <h4 className="text-off-white font-semibold text-lg mb-1 group-hover:text-teal transition-colors">
-            {project.name}
-          </h4>
+          <div className="flex items-start gap-3 mb-2">
+            <div className="flex-shrink-0 mt-1">
+              {project.isExternal ? (
+                <FaExternalLinkAlt className="text-teal w-4 h-4 group-hover:scale-110 transition-transform" />
+              ) : (
+                <FaArrowRight className="text-teal w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              )}
+            </div>
+            <div className="flex-1">
+              <h4 className="text-off-white font-semibold text-lg mb-1 group-hover:text-teal transition-colors">
+                {project.name}
+              </h4>
+            </div>
+          </div>
           <p className="text-gray-400 text-sm mb-3">{project.description}</p>
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech, idx) => (
               <span
                 key={idx}
@@ -140,7 +175,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
 
       {/* Sub-systems */}
       {project.subSystems && project.subSystems.length > 0 && (
-        <div className="ml-8 mt-4 space-y-3 border-l-2 border-teal/30 pl-4">
+        <div className="ml-0 md:ml-[17rem] mt-4 space-y-3 border-l-2 border-teal/30 pl-4">
           {project.subSystems.map((system, idx) => (
             <div key={idx} className="relative">
               <div className="absolute -left-[1.125rem] top-2 w-3 h-3 rounded-full bg-teal/50 border-2 border-charcoal-gray"></div>
@@ -166,8 +201,12 @@ const ProjectItem = ({ project }: { project: Project }) => {
 
 function Projects() {
   return (
-    <section id="projects" className="bg-rich-black text-off-white py-12 px-4">
-      <div className="max-w-5xl mx-auto">
+    <section id="projects" className="relative bg-rich-black text-off-white py-12 px-4 overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute top-10 right-20 w-96 h-96 bg-teal/5 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 left-10 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl animate-pulse"></div>
+      
+      <div className="relative z-10 max-w-5xl mx-auto">
         <h2 className="text-teal text-center mb-10 text-3xl font-bold">Projects</h2>
 
         {/* Client Projects */}
