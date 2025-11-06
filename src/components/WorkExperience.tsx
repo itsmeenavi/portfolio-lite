@@ -27,7 +27,7 @@ function WorkExperience() {
       icon: <SiReact size={40} className="text-[#61DAFB]" />,
       color: 'from-teal/20 to-blue-500/20',
       description:
-        'Designed and developed a comprehensive fitness ecosystem, leading client consultations to translate their business vision into a multi-portal platform. Developed a unified platform for a client\'s business operations, featuring integrated E-Commerce, Trainer, Affiliate, and Admin dashboards.',
+        'Designed and developed a comprehensive fitness ecosystem, leading client consultations to translate their business vision into a multi-portal platform. Developed a unified platform for a client\'s business operations, featuring integrated E-Commerce, Trainer, Affiliate, and Admin dashboards. Additionally, developed the main company website (Anehan AgriTech) showcasing the B2B platform connecting palay farmers with rice millers and retailers in Central Luzon, and built the agency website (Anehan IT Solutions) presenting the software development team\'s services, portfolio, and expertise in building innovative solutions from concept to deployment.',
       skills: ['React', 'Next.js', 'Firebase', 'Material UI']
     },
     {
