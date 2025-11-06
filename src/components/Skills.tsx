@@ -29,6 +29,7 @@ import {
   SiCanva,
   SiOdoo,
   SiMysql,
+  SiSupabase,
   SiVercel,
   SiNetlify,
   SiJira,
@@ -79,6 +80,7 @@ function Skills() {
     "Databases & Cloud": [
       { name: 'MySQL', icon: <SiMysql size={40} color="#4479A1" />, description: 'Novice' },
       { name: 'Firebase', icon: <SiFirebase size={40} color="#FFCA28" />, description: 'Novice' },
+      { name: 'Supabase', icon: <SiSupabase size={40} color="#3ECF8E" />, description: 'Novice' },
     ],
     "Design Tools": [
       { name: 'Figma', icon: <SiFigma size={40} color="#F24E1E" />, description: 'Advanced' },
