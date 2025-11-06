@@ -156,7 +156,7 @@ function AboutMe() {
             </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-gray-400">
-              <span>ivhanchristophersalazar@gmail.com</span>
+              <span>ivhanchris761@gmail.com</span>
               <span className="hidden sm:inline">•</span>
               <span>09669448658</span>
             </div>
